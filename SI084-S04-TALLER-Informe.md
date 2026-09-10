@@ -66,3 +66,20 @@ En total, el análisis real identificó 483 deficiencias y problemas de cumplimi
 
 ## 4. Conclusiones
 Se probó la efectividad del escaneo de compliance con herramientas de la industria sobre un entorno nativo (WSL Ubuntu), permitiendo estructurar evidencia concreta en papeles de trabajo formales de auditoría.
+
+## 5. Cuestionario
+**Pregunta de transferencia: ¿Qué riesgo correría una organización real si esto se hiciera mal?**
+Respuesta: Si una organización omite la automatización y gestión de la configuración segura (mediante compliance scanning, SBOM, etc.), se expondría a riesgos críticos de ciberseguridad. Al no tener visibilidad sobre vulnerabilidades de dependencias ni deficiencias de configuración en sus contenedores (como el montaje del socket de Docker), un atacante podría explotar fácilmente las fallas y escalar privilegios desde la aplicación hacia el sistema operativo anfitrión. Esto no solo facilitaría el compromiso total de la infraestructura, sino que conllevaría a graves sanciones legales por incumplimiento de normativas internacionales como ISO/IEC 27001 o la pérdida de certificaciones, impactando directamente en la continuidad del negocio y la reputación de la empresa.
+
+## 6. Referencias bibliográficas
+- Aqua Security. (s.f.). Trivy Documentation. https://trivy.dev/
+- Center for Internet Security. (s.f.). CIS Benchmarks. https://www.cisecurity.org/cis-benchmarks
+- CISOfy. (s.f.). Lynis — Security auditing tool. https://cisofy.com/lynis/
+- ISACA. (2018). COBIT 2019 Framework: Governance and Management Objectives. https://www.isaca.org/resources/cobit
+- ISO. (2022). ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements. https://www.iso.org/standard/27001
+- OpenSCAP Project. (s.f.). OpenSCAP Project. https://www.open-scap.org/
+
+## 7. Anexos
+- Anexo A: Reporte completo de configuración extraído (docker-bench.log, lynis-consola.txt).
+- Anexo B: Matriz consolidada de hallazgos (PT04_matriz_control.csv).
+- Anexo C: Inventario de componentes (sbom_juiceshop.json).
