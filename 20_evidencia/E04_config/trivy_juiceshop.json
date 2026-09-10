@@ -1,0 +1,21 @@
+{
+  "Results": [
+    {
+      "Target": "bkimminich/juice-shop:latest (debian 11.5)",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgName": "ncurses",
+          "InstalledVersion": "6.2+20201114-2",
+          "Severity": "HIGH"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-44487",
+          "PkgName": "nghttp2",
+          "InstalledVersion": "1.43.0-1",
+          "Severity": "CRITICAL"
+        }
+      ]
+    }
+  ]
+}
